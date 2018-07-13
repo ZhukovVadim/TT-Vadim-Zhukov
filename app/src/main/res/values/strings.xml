@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TT Vadim Zhukov</string>
+    <string name="sample_category" translatable="false">Sample Category</string>
+    <string name="sample_name" translatable="false">Sample Name</string>
+    <string name="sample_type" translatable="false">Sample Type</string>
+    <string name="categories">Categories</string>
+    <string name="gifts">Gifts</string>
+    <string name="gift">Gift</string>
+    <string name="cancel">Cancel</string>
+    <string name="share">Share</string>
+    <string name="name">Name: %S</string>
+    <string name="type">Type: %S</string>
+    <string name="error_message">Something went wrong :(</string>
+    <string name="choose_app">Choose app</string>
+</resources>
