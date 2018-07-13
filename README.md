@@ -1,45 +1,34 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+Тестовый задача.
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+Задача
+Приложение для отправки подарков друзьям и близким.
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+Приложение
+Получение данных
+http://podarki.space:4658/test/data
 
----
+Ответ – JSON.
+Свойство welcome – URL на ресурс приветствия.
+Свойство catalog – список категорий с подарками.
 
-## Edit a file
+При запуске приложения необходимо отобразить приветствие, его необходимо отобразить поверх всей программы с прозрачным фоном поверх контента.
+Приветствие отображается ровно 10 секунд с момента запуска приветствия. Для отображения приветствия необходимо использовать webview или другую библиотеку или фреймовок, например Crosswalk (https://crosswalk-project.org/).
+Ресурс приветствия - инкапсулированный JavaSctipt код. 
+После запуска программы отобразить список категорий.
+Каждая категория включает название и список подарков.
+При выборе категории необходимо отобразить список подарков.
+Каждый подарок включает id, тип, название, preview и ресурс.
+С категории можно вернуться назад в список категорий.
+При выборе подарка необходимо отобразить ресурс подарка и две опции – «отправить» или «отмена».
+При выборе «отправить» – отправляем ресурс подарка контакту с выбранного пользователем приложения, например в Вайбере, дяде Пете.
+При выборе «отмена» - показываем список подарков.
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+Deep Links
+Обрабатывать линки типа
+http://podarki.space:4658/gift/:id 
+где id – id подарка.
+Как только убедились, что подарок есть – необходимо показать подарок, в ином случае показываем список категорий.
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+Пример: пользователь со списка подарков выбрал подарок "картинка Котик", далее показываем предпросмотр подарка, пользователь выбирает "отправить", далее выбирает программу, например Телеграмм, далее выбирает контакт Телеграмма, далее выбранному контакту в чат приходит картинка котика.
 
----
-
-## Create a file
-
-Next, you’ll add a new file to this repository.
-
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
-
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
-
----
-
-## Clone a repository
-
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
-
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
-
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+Что требуется - реализовать логику работы программы, отправку и отображение подарков, реализовать графическую часть "как нравиться" - дизайн отсутствует, собрать приложение, приложение и исходники залить на bitbucket, система GIT, дать доступ к репозиторию на чтение.
